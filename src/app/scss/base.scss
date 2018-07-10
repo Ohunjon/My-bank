@@ -1,0 +1,65 @@
+@import "colors.scss";
+*{
+  margin:0;
+  padding: 0;
+}
+html, body{
+  height: 100%;
+}
+div{
+  box-sizing: border-box;
+}
+
+.d-flex{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family:"Roboto Bd";
+  color:#000;
+  text-transform: uppercase;
+}
+p,span,a{
+  font-family: "Roboto Rg";
+}
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+.c-active{
+  color:$c-act-fonts;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  //width: 100%;
+  height: 100%;
+  li{
+    list-style: none;
+  }
+}
+button{
+  padding: 5px 25px;
+  font-family: "Roboto Lg";
+  color:#fff;
+  font-size: 18px;
+  background-color: $c-act-fonts;
+  border-radius: 2px;
+  border: none;
+  &:hover{
+    background-color: $c-btn-hover;
+  }
+}
+
+.t-danger,.t-warring,.t-error{
+  font-family: "Roboto Th";
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+}
+.t-danger{
+  color: red;
+}

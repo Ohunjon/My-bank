@@ -1,0 +1,18 @@
+<div class="content d-flex">
+  <div class="d-form">
+<h2>Login</h2>
+<form   [formGroup]="loginform" (ngSubmit)="onSubmit()" class="d-flex" >
+  <div><span><i class="fa fa-envelope"></i></span><input type="text" placeholder="Your E-mail" formControlName="email">
+    <validator [control]="loginform.controls['email']"></validator>
+  </div>
+
+
+
+
+  <div><span><i class="fa fa-user"></i></span><input type="password" placeholder="Password" formControlName="password">
+    <validator [control]="loginform.controls['password']"></validator>
+  </div>
+  <div><button>Login</button></div>
+</form>
+  </div>
+</div>

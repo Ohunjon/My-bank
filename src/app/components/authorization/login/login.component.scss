@@ -1,0 +1,79 @@
+@import "../../../scss/colors.scss";
+
+
+.content {
+  width: 100%;
+  min-height: 100vh;
+  flex-flow: row wrap;
+  //justify-content: flex-start;
+  align-items: center;
+  padding: 20px 0 0 100px;
+  background-image: url("../../../../assets/images/back-img.jpg");
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $c-dark;
+    opacity: .4;
+  }
+  .d-form {
+
+    padding: 20px 10px;
+    background-color: #fff;
+    z-index: 0;
+    width: 330px;
+    //height: 350px;
+    //opacity: 0.6;
+    border-radius: 2px;
+  }
+
+  h2 {
+    text-align: center;
+    font-family: "Roboto Bl";
+    letter-spacing: 1.5px;
+    font-size: 30px;
+
+  }
+  form {
+    min-height: 220px;
+    width: 100%;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 1;
+    input {
+      //z-index: 1;
+      padding: 10px;
+      border: 1px solid gray;
+      background-color: #fff;
+
+      border-left: none;
+      width: 219px;
+      &:focus {
+        outline: 0;
+        border: 1px solid $c-act-fonts;
+        border-left: none;
+      }
+    }
+    span {
+      padding: 7px  15px 9px 15px;
+      background-color: #808080;
+
+      i {
+        font-size: 17px;
+        color: #000;
+
+      }
+    }
+    button {
+      padding: 5px 30px;
+      width: 220px;
+    }
+  }
+}

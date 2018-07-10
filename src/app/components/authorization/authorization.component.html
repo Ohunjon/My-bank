@@ -1,0 +1,26 @@
+<header #header>
+  <ul class="d-flex">
+    <li><a routerLinkActive="active"  [routerLink]="['/home']" (click)="changePage(1)">Home</a></li>
+    <li><a routerLinkActive="active" [routerLink]="['/about']" (click)="changePage(2)">About</a></li>
+    <li><a routerLinkActive="active" [routerLink]="['/feedback']" (click)="changePage(3)">Contact</a></li>
+    <li class="li-login"><a routerLinkActive="active" [routerLink]="['/login']" (click)="changePage(4)"><i class="fa fa-user-circle"></i> Login</a></li>
+  </ul>
+</header>
+
+<section [class.in-other-pages]="flagSection">
+
+  <router-outlet></router-outlet>
+
+</section>
+
+<footer class="d-flex">
+
+  <span>2018 © Created by Okhunjon. B</span>
+</footer>
+
+
+
+
+
+
+<!--<router-outlet></router-outlet>-->

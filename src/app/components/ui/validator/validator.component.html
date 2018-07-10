@@ -1,0 +1,6 @@
+<div class="d-flex"
+*ngIf="(control.invalid && control.touched && control.dirty) || (control.invalid && control.touched && control.pristine) || extraMessage || successMessage">
+  <span class="t-danger" *ngIf="control.hasError('required')"> Заполните поле.&nbsp;</span>
+  <span class="t-danger" *ngIf="control.errors && control.hasError('email')">Неверный формат почты.&nbsp;</span>
+
+</div>
